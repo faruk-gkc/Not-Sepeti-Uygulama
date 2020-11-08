@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgba(254, 93, 80,1);
+    --main-light-color: rgba(254, 93, 80,.5);
+    --accent-color:rgba(44, 128, 209,1);
+    --accent-light-color:rgba(44, 128, 209,0.5);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, var(--main-color), var(--main-light-color));
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.header,form{
+    min-height: 20vh;
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+}
+.form-item{
+    padding: .5rem;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+.form-btn{
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+.form-btn:hover{
+    color: #fff;
+    background-color: var(--accent-color);
+}
+.gorev-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gorev-listesi{
+    list-style: none;
+    min-width: 40%;
+}
+.gorev-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .8rem;
+    font-size:1.3rem ;
+    background-color: #fff;
+    transition: 1s linear;
+    
+}
+.gorev-tanim{
+    flex: 1;
+    padding: 1rem;
+}
+.gorev-btn{
+    background-color: var(--accent-color);
+    padding: 1.1rem;
+    color:#fff;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.gorev-btn-sil{
+    background-color: rgba(200, 0,0);
+}
+.gorev-tamamlandi{
+    text-decoration:line-through;
+    opacity: .5;
+}
+.fas{
+    pointer-events: none;
+}
+.kaybol{
+    transform: scale(0);
+}
